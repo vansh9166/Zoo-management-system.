@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(zooo.jpg);
+    background-size: 100%;
+}
+h1 {
+    margin: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  p{
+    color: blueviolet;
+  }
