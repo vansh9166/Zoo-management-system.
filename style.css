@@ -1,0 +1,181 @@
+.test{
+    background-color: gray;
+    opacity: 0.8;
+    border: 2px solid red;
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: monospace;
+}
+.row
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    display: inline;
+}
+
+
+.main-nav
+{
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    list-style: none;
+    position: fixed;
+    list-style: none;
+    right: 50px;
+    top:30px;
+}
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li .active 
+{
+    border: 1px solid rgb(255, 255, 255);
+    
+}
+
+.main-nav li a:hover
+{
+    border: 1px solid white;
+}
+
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+
+    /* line-height: 20px; */
+}
+.main-nav  li  li
+{
+    display: none;
+}
+
+.hero
+{
+    position: absolute;
+    width: 900px;
+    margin-left: 230px;
+    margin-top: -70px;
+    
+}
+
+
+h1
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 275px;
+    
+}
+header
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(pic1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.button
+{
+    margin-top: 30px;
+    margin-left: 15%;
+}
+
+.btn
+{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 10px;
+
+}
+.btn-one
+{
+    background-color: darkorange;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-two
+{
+    font-family: "Roboto", sans-serif;
+    width: auto;
+}
+
+.btn-two:hover {
+    border:1px solid darkorange;
+    background-color: darkorange;
+}
+
+.logo img
+{
+    width: 400px;
+    height: auto;
+}
+
+/* login form */
+
+#mainForm {
+    width: 40%;    
+    position: relative;
+    left: 30%;
+
+}
+
+
+form .email {
+    margin-left: 32px;
+    left: 26%;
+}
+
+form label {
+    color: rgb(172, 169, 169);
+    font-size: 20px;
+    position: relative;
+    left: 35%;
+    pointer-events: none;
+    transition: 0.5s;
+
+}
+
+
+
+form input {
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    font-size: 20px;
+    margin: 10px;
+    width: 200px;
+}
+
+
+.hide {
+    display: none;
+}
+
