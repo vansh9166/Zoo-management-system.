@@ -1,0 +1,157 @@
+body {
+	height: 1000px;
+	margin: 0%;
+	padding: 0%;
+	/* background: linear-gradient(120deg, rgb(40, 158, 11), rgb(34, 184, 47), rgb(38, 221, 60), rgb(72, 245, 92)); */
+	background: url(pic1.jpg) center/cover;
+
+	overflow: hidden;
+}
+
+.outerSignUp {
+
+	background-color: transparent;
+	opacity: 0.7;
+	border-radius: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding-top: 20px;
+	transform: translate(-50%, -50%);
+	/* width: 200px; */
+
+
+}
+
+.outerSignUp form {
+	border-radius: 20px;
+	background-color: #000;
+	/* opacity: 0.7; */
+
+}
+
+
+.outerSignUp form input[type="text"], .outerSignUp form input[type="password"] {
+	margin-bottom: 20px;
+	font-size: 20px;
+	border: none;
+	border-bottom: 0.5px solid #fff;
+	outline: none;
+	background: transparent;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform:translateX(-50%);
+	color: #fff;
+	text-align: center;
+}
+
+.outerSignUp form label {
+	/* opacity: 0.7; */
+	position: relative;
+	top: -2px;
+	left: -35%;
+	/* text-align: center; */
+	/* transform: translateY(50%); */
+	pointer-events: none;
+	color: #fff;
+	transition: 0.5s;
+	font-size: 17px
+
+}
+
+#gender {
+	
+}
+
+.outerSignUp form .fnm:focus ~ #fnm, 
+.outerSignUp form .lnm:focus ~ #lnm, 
+.outerSignUp form .eml:focus ~ #eml, 
+.outerSignUp form .pwd:focus ~ #pwd
+{
+	top: -35px;
+	left: -60%;
+	color: #fff;
+	font-size: 20px;
+
+}
+
+.outerSignUp form .fnm:valid ~ #fnm, 
+.outerSignUp form .lnm:valid ~ #lnm, 
+.outerSignUp form .eml:valid ~ #eml, 
+.outerSignUp form .pwd:valid ~ #pwd
+{
+	top: -35px;
+	left: -65%;
+	color: #fff;
+	font-size: 20px;
+	font-style: italic;
+	opacity: 10;
+
+
+}
+
+.outerSignUp form .fnm,
+.outerSignUp form .lnm,
+.outerSignUp form .eml,
+.outerSignUp form .pwd
+{
+	
+	transition: 0.5s;
+}
+
+.outerSignUp form .fnm:focus , 
+.outerSignUp form .lnm:focus, 
+.outerSignUp form .eml:focus, 
+.outerSignUp form .pwd:focus,
+.outerSignUp form .fnm:valid , 
+.outerSignUp form .lnm:valid, 
+.outerSignUp form .eml:valid, 
+.outerSignUp form .pwd:valid
+{
+	margin : 30px 0px 20px 0px;
+	
+}
+
+.outerSignUp form .fnm:focus , 
+.outerSignUp form .lnm:focus, 
+.outerSignUp form .eml:focus, 
+.outerSignUp form .pwd:focus{
+	border-bottom: 0.5px solid #fff;
+}
+
+.outerSignUp form input[type="submit"] {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 20px;
+	line-height: 40px;
+	width: 200px;
+	border: 1px solid #fff;
+	color: #fff;
+	border-radius: 20px;
+	background: transparent;
+	cursor: pointer;
+}
+
+.outerSignUp form input[type="submit"]:active {
+	color: #fff;
+}
+
+
+
+.outerSignUp form a {
+	color: #fff;
+	text-decoration: none;
+	line-height: 20px;
+	margin: 30px;
+}	
+
+#signup:hover {
+	color: white;
+	background-color: darkorange;
+	border: 1px solid darkorange;
+	transition: 0.5s;
+}
+
+

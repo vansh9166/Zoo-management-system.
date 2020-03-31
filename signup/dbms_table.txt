@@ -1,0 +1,77 @@
+create table customer (
+
+    cid int(10) PRIMARY KEY not null,
+    cfname varchar not null,
+    clname varchar not null,
+    email varchar not null,
+    pass varchar not null,
+    address varchar
+
+)
+
+create table ticket(
+	tid int(10) AUTO_INCREMENT PRIMARY key not null,
+    valid_date varchar,
+    price int not null
+
+)
+
+CREATE TABLE employee (
+
+    eid int(10) AUTO_INCREMENT PRIMARY KEY NOT null,
+    efname varchar not null,
+    elname varchar not null,
+    ph_no int(10) not null,
+    salary int not null
+
+)
+
+CREATE TABLE zoo (
+
+    zid int(10) AUTO_INCREMENT PRIMARY KEY NOT null,
+    location varchar not null,
+    zname varchar not null,
+	hours int not null,
+    contact int not null,
+    
+)
+
+
+CREATE TABLE animal_guide (
+
+    agid int(10) AUTO_INCREMENT PRIMARY KEY NOT null,
+	zoointro varchar(100),
+    updated_year int(4) 
+)
+
+
+CREATE TABLE animal_kind (
+
+    akid int(10) AUTO_INCREMENT PRIMARY KEY NOT null,
+    zoo_region varchar not null,
+    aname varchar not null,
+    phy_char varchar,
+    diet varchar,
+    population varchar
+
+)
+
+create table animal (
+
+    aid int(10) AUTO_INCREMENT PRIMARY KEY NOT null,
+	gender varchar not null,
+    cage_no int not null,
+    feed_time int not null
+)
+
+CREATE table animal_detail (
+
+    adid int(10) AUTO_INCREMENT PRIMARY KEY NOT null,
+    height int,
+    weight int,
+    age int
+
+)
+
+
+
