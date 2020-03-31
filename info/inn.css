@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(in.jpg);
+    background-size: 100%;
+  
+}
+h1 {
+    margin: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    color: aquamarine;
+    text-overflow: clip;
+    animation-duration: 3s;
+    animation-name: move;
+  }
+
+  
+  @keyframes move {
+    from { margin-left: 0; }
+    to   {  margin-right: 400px; }
+  }
+  
+  p{
+    color: rgb(84, 240, 118);
+  }

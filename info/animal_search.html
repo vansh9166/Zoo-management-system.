@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Search Animal</title>
+    
+</head>
+<?php
+	$ZName=filter_input(INPUT_POST,'subm');
+
+         $dbhost = 'localhost';
+         $dbuser = 'root';
+         $dbpass = '';
+         $conn = mysqli_connect($dbhost,$dbuser,$dbpass,'zoo');
+   	if(!$conn ){
+            die('Could not connect: ' . mysqli_error());
+         }
+	else{
+	echo "ZOO";
+	}
+	 
+	 $q2="select Aid,AName,Height,Weight,Age,Gender,Cage_Number,Feed_Time,Physical_Characteristics from zoo where AName='$AName'";
+	 $record=mysqli_query($conn,$q2);
+	      
+?>
+<?php
+
+    echo"<table border='1'";
+        echo"<tr><th> Aid<th> AName  </th><th> Height  </th><th> Weight </th><th> Age  </th><th>Gender</th>>Cage_Number</th><th> Feed_Time </th><th> Physical_Characteristics</th>;
+
+        while($row=mysqli_fetch_assoc($record)){
+            
+        echo"<tr><th>{$row['Aid']}</th><th>{$row['AName']}</th><th>{$row['Height']}</th><th>{$row['Weight']}</th><th>{$row['Age']}</th><th>{$row['Gender']}</th><th>{$row['Cage_Number']}</th><th>{$row['Feed_Time']}</th><th>{$row['Physical_Characteristics']}</th>";
+            
+        }
+    echo"</table>";
+?>        
+           
+        
+        
+    </body>
+
+
+
+</html>
